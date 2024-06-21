@@ -7,8 +7,8 @@ from sqlalchemy.orm import DeclarativeMeta
 
 from conf.config import settings
 from webapp.integrations.metrics.metrics import async_integrations_timer
-from webapp.models.sirius.product import Product
-from webapp.models.sirius.restaurant import Restaurant
+# from webapp.models.sirius.product import Product
+
 
 ModelT = TypeVar('ModelT', bound=DeclarativeMeta)
 
@@ -63,25 +63,25 @@ class AsyncCRUDFactory:
         return False
 
 
-@async_integrations_timer
-async def get_entities_by_name(
-    session: AsyncSession,
-    entity_type: Product | Restaurant,
-    search_info: Any,
-) -> Sequence[Product | Restaurant]:
-    query: Select[tuple[Product | Restaurant]] = select(entity_type)
-
-    if search_info and search_info.name:
-        exact_match_query = query.where(entity_type.name == search_info.name)
-        exact_match_result = (await session.execute(exact_match_query)).scalars().all()
-
-        if exact_match_result:
-            return exact_match_result
-
-        similar_entities = (await session.execute(
-            select(entity_type).where(entity_type.name.ilike(f"{search_info.name}%"))
-        )).scalars().all()
-
-        return similar_entities
-
-    return (await session.execute(query)).scalars().all()
+# @async_integrations_timer
+# async def get_entities_by_name(
+#     session: AsyncSession,
+#     entity_type: Product ,
+#     search_info: Any,
+# ) -> Sequence[Product]:
+#     query: Select[tuple[Product]] = select(entity_type)
+#
+#     if search_info and search_info.name:
+#         exact_match_query = query.where(entity_type.name == search_info.name)
+#         exact_match_result = (await session.execute(exact_match_query)).scalars().all()
+#
+#         if exact_match_result:
+#             return exact_match_result
+#
+#         similar_entities = (await session.execute(
+#             select(entity_type).where(entity_type.name.ilike(f"{search_info.name}%"))
+#         )).scalars().all()
+#
+#         return similar_entities
+#
+#     return (await session.execute(query)).scalars().all()

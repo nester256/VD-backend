@@ -20,6 +20,7 @@ async def main(fixtures: List[str]) -> None:
     for fixture in fixtures:
         fixture_path = Path(fixture)
         model = metadata.tables[fixture_path.stem]
+
         with open(fixture_path, 'r') as file:
             values = json.load(file)
 

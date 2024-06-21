@@ -4,7 +4,6 @@ from fastapi.middleware.cors import CORSMiddleware
 from webapp.api.crud.order.router import order_router
 from webapp.api.crud.order_product.router import op_router
 from webapp.api.crud.product.router import product_router
-from webapp.api.crud.restaurant.router import restaurant_router
 from webapp.api.crud.user.router import user_router
 from webapp.api.login.router import auth_router
 from webapp.api.v1.router import v1_router
@@ -31,7 +30,6 @@ def setup_routers(app: FastAPI) -> None:
     routers = [
         auth_router,
         product_router,
-        restaurant_router,
         order_router,
         op_router,
         user_router,

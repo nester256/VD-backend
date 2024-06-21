@@ -1,6 +1,6 @@
 from datetime import timedelta
 
-from pydantic_settings import BaseSettings
+from pydantic.v1 import BaseSettings
 
 
 class Settings(BaseSettings):

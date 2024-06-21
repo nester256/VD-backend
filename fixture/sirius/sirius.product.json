@@ -1,14 +1,16 @@
 [
   {
     "id": 1,
-    "restaurant_id": 1,
     "name": "Shaurma Standart",
-    "price": 269.99
+    "description": "Ням ням",
+    "price": 269.99,
+    "category_id": 1
   },
   {
     "id": 2,
-    "restaurant_id": 1,
     "name": "Shaurma Big",
-    "price": 329.99
+    "description": "Ням ням x2",
+    "price": 329.99,
+    "category_id": 1
   }
 ]

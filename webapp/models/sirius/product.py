@@ -1,28 +1,32 @@
+from decimal import Decimal
 from typing import TYPE_CHECKING, List
 
-from sqlalchemy import Float, ForeignKey, Integer, String, Index
+from sqlalchemy import ForeignKey, Integer, String, Index, DECIMAL, Text
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 
-from webapp.models.meta import DEFAULT_SCHEMA, Base
+from webapp.models.meta import Base, DEFAULT_SCHEMA
 
 if TYPE_CHECKING:
     from webapp.models.sirius.order import Order
-    from webapp.models.sirius.restaurant import Restaurant
+    from webapp.models.sirius.category import Category
 
 
 class Product(Base):
     __tablename__ = 'product'
-    __table_args__ = ({'schema': DEFAULT_SCHEMA},)
 
     id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True)
 
-    restaurant_id: Mapped[int] = mapped_column(Integer, ForeignKey(f'{DEFAULT_SCHEMA}.restaurant.id'), nullable=False)
-
     name: Mapped[str] = mapped_column(String, nullable=False)
 
-    price: Mapped[float] = mapped_column(Float, nullable=False)
+    description: Mapped[str] = mapped_column(String, nullable=False)
 
-    restaurant: Mapped['Restaurant'] = relationship(back_populates='products')
+    price: Mapped[Decimal] = mapped_column(DECIMAL, nullable=False)
+
+    category_id: Mapped[int] = mapped_column(Integer, ForeignKey('category.id'), nullable=False)
+
+    category: Mapped['Category'] = relationship('Category', back_populates='products')
+
+    picture_url: Mapped[str] = mapped_column(Text, nullable=True)
 
     orders: Mapped[List['Order']] = relationship(
         secondary=f'{DEFAULT_SCHEMA}.order_product',
