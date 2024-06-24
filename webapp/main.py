@@ -1,11 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from webapp.api.crud.order.router import order_router
-from webapp.api.crud.order_product.router import op_router
-from webapp.api.crud.product.router import product_router
-from webapp.api.crud.user.router import user_router
-from webapp.api.login.router import auth_router
 from webapp.api.v1.router import v1_router
 from webapp.db.redis import start_redis
 from webapp.integrations.metrics.metrics import metrics
@@ -28,11 +23,6 @@ def setup_middleware(app: FastAPI) -> None:
 def setup_routers(app: FastAPI) -> None:
     app.add_route('/metrics', metrics)
     routers = [
-        auth_router,
-        product_router,
-        order_router,
-        op_router,
-        user_router,
         v1_router,
     ]
     for router in routers:
@@ -44,5 +34,4 @@ def create_app() -> FastAPI:
     start_redis()
     setup_middleware(app)
     setup_routers(app)
-
     return app

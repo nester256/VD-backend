@@ -1,14 +1,7 @@
-from typing import TYPE_CHECKING
-
 from sqlalchemy import ForeignKey, Integer
-from sqlalchemy.orm import Mapped, mapped_column, relationship
+from sqlalchemy.orm import Mapped, mapped_column
 
 from webapp.models.meta import Base
-
-
-if TYPE_CHECKING:
-    from webapp.models.sirius.order import Order
-    from webapp.models.sirius.product import Product
 
 
 class OrderProduct(Base):

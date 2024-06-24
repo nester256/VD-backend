@@ -26,7 +26,7 @@ class Product(Base):
 
     category: Mapped['Category'] = relationship('Category', back_populates='products')
 
-    picture_url: Mapped[str] = mapped_column(Text, nullable=True)
+    picture_url: Mapped[str] = mapped_column(String, nullable=True)
 
     orders: Mapped[List['Order']] = relationship(
         secondary=f'{DEFAULT_SCHEMA}.order_product',

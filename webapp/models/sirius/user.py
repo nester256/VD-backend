@@ -19,16 +19,12 @@ class UserRoleEnum(Enum):
 class User(Base):
     __tablename__ = 'user'
 
-    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True)
+    id: Mapped[int] = mapped_column(BigInteger, primary_key=True)
 
-    username: Mapped[int] = mapped_column(BigInteger, unique=True)
+    address: Mapped[str] = mapped_column(String, nullable=True)
 
-    tg: Mapped[str] = mapped_column(String)
+    role: Mapped[UserRoleEnum] = mapped_column(ENUM(UserRoleEnum), default=UserRoleEnum.customer)
 
-    code: Mapped[str] = mapped_column(String)
+    orders: Mapped[List['Order']] = relationship('Order', back_populates='user', foreign_keys='Order.user_id', overlaps="deliveries")
 
-    address: Mapped[str] = mapped_column(String)
-
-    role: Mapped[UserRoleEnum] = mapped_column(ENUM(UserRoleEnum))
-
-    orders: Mapped[List['Order']] = relationship('Order', back_populates='user')
+    deliveries: Mapped[List['Order']] = relationship('Order', foreign_keys='Order.deliverer_id', overlaps="deliverer")

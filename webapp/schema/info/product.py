@@ -1,24 +1,23 @@
-from typing import List
-
 from pydantic import BaseModel, ConfigDict
+
+
+class ProductResp(BaseModel):
+    model_config = ConfigDict(from_attributes=True)
+    id: int
+    name: str
+    price: float
+
+
+class ProductsPageResp(BaseModel):
+    model_config = ConfigDict(from_attributes=True)
+    products: list[ProductResp]
 
 
 class ProductInfo(BaseModel):
     model_config = ConfigDict(from_attributes=True)
+    id: int
     name: str
-    restaurant_id: int
+    description: str
     price: float
-
-
-class ProductResponse(BaseModel):
-    name: str
-    restaurant_id: int
-    price: float
-
-
-class ProductsListResponse(BaseModel):
-    products: List[ProductResponse]
-
-
-class ProductSearch(BaseModel):
-    name: str | None
+    category_id: int
+    picture_url: str | None

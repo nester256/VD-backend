@@ -2,7 +2,7 @@ from datetime import datetime
 from enum import Enum
 from typing import TYPE_CHECKING, List
 
-from sqlalchemy import DateTime, ForeignKey, Integer
+from sqlalchemy import DateTime, ForeignKey, Integer, BigInteger
 from sqlalchemy.dialects.postgresql import ENUM
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 
@@ -25,9 +25,13 @@ class Order(Base):
 
     id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True)
 
-    user_id: Mapped[int] = mapped_column(Integer, ForeignKey('user.id'))
+    user_id: Mapped[int] = mapped_column(BigInteger, ForeignKey('user.id'))
 
-    user: Mapped['User'] = relationship('User', back_populates='orders', uselist=False)
+    deliverer_id: Mapped[int] = mapped_column(BigInteger, ForeignKey('user.id'))
+
+    user: Mapped['User'] = relationship('User', back_populates='orders', foreign_keys='Order.user_id', uselist=False, overlaps="deliverer")
+
+    deliverer: Mapped['User'] = relationship('User', foreign_keys='Order.deliverer_id', overlaps="orders")
 
     create: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
 

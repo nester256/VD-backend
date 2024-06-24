@@ -1,10 +1,12 @@
 [
   {
-    "id": 1,
-    "username": 438745245,
-    "tg": "@nester256",
+    "id": 438745245,
     "address": "Сириус",
-    "code": "test",
     "role": "customer"
+  },
+  {
+    "id": 5887759060,
+    "address": "Сириус",
+    "role": "deliverer"
   }
 ]

@@ -1,21 +1,37 @@
-from sqlalchemy import select
+from typing import Optional
+
+from sqlalchemy import select, exists
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from webapp.crud.utils.operations import AsyncCRUDFactory
+from webapp.schema.auth.user import UserRegister
 from webapp.models.sirius.user import User
-from webapp.schema.info.user import UserLogin
-from webapp.utils.auth.password import hash_password
+from webapp.logger import logger
 
 
-async def get_user(session: AsyncSession, user_info: UserLogin) -> User | None:
+async def get_user(session: AsyncSession, user_id: int) -> User | None:
     return (
         await session.scalars(
             select(User).where(
-                User.username == user_info.username,
-                User.hashed_password == hash_password(user_info.password),
+                User.id == user_id
             )
         )
     ).one_or_none()
 
 
-user_crud = AsyncCRUDFactory(User)
+async def check_user(session: AsyncSession, user_id: int) -> bool:
+    query = select(exists().where(User.id == user_id))
+    return bool(await session.scalar(query))
+
+
+async def create_user(session: AsyncSession, user_info: UserRegister) -> Optional[User]:
+    try:
+        user = User(
+            id=user_info.id
+        )
+        session.add(user)
+        await session.commit()
+        return user
+    except Exception as err:
+        logger.error(f'An error occurred while creating a user: {err}')
+        await session.rollback()
+        return None

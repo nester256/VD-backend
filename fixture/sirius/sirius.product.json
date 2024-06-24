@@ -12,5 +12,271 @@
     "description": "Ням ням x2",
     "price": 329.99,
     "category_id": 1
+  },
+  {
+    "id": 3,
+    "name": "Classic Burger",
+    "description": "Сочный бургер с говядиной",
+    "price": 299.99,
+    "category_id": 1
+  },
+  {
+    "id": 4,
+    "name": "Caesar Salad",
+    "description": "Легкий салат с курицей и соусом Цезарь",
+    "price": 249.99,
+    "category_id": 1
+  },
+  {
+    "id": 5,
+    "name": "Margherita Pizza",
+    "description": "Классическая пицца с томатами и сыром",
+    "price": 449.99,
+    "category_id": 1
+  },
+  {
+    "id": 6,
+    "name": "Sushi Set",
+    "description": "Ассорти из свежих суши и роллов",
+    "price": 799.99,
+    "category_id": 1
+  },
+  {
+    "id": 7,
+    "name": "Lamb Kebab",
+    "description": "Шашлык из рубленого мяса",
+    "price": 359.99,
+    "category_id": 1
+  },
+  {
+    "id": 8,
+    "name": "Falafel",
+    "description": "Хрустящие шарики из нута",
+    "price": 199.99,
+    "category_id": 1
+  },
+  {
+    "id": 9,
+    "name": "Pasta Carbonara",
+    "description": "Паста с беконом и сливочным соусом",
+    "price": 379.99,
+    "category_id": 1
+  },
+  {
+    "id": 10,
+    "name": "Ramen",
+    "description": "Японский суп с лапшой",
+    "price": 329.99,
+    "category_id": 1
+  },
+  {
+    "id": 11,
+    "name": "Tom Yum Soup",
+    "description": "Острый тайский суп с креветками",
+    "price": 359.99,
+    "category_id": 1
+  },
+  {
+    "id": 12,
+    "name": "Tiramisu Cake",
+    "description": "Итальянский десерт с кофе и сыром маскарпоне",
+    "price": 199.99,
+    "category_id": 1
+  },
+  {
+    "id": 13,
+    "name": "Uzbek Plov",
+    "description": "Рис с мясом и овощами",
+    "price": 319.99,
+    "category_id": 1
+  },
+  {
+    "id": 14,
+    "name": "Pork Shashlik",
+    "description": "Маринованное мясо на гриле",
+    "price": 399.99,
+    "category_id": 1
+  },
+  {
+    "id": 15,
+    "name": "Borscht",
+    "description": "Традиционный украинский суп с капустой и свеклой",
+    "price": 179.99,
+    "category_id": 1
+  },
+  {
+    "id": 16,
+    "name": "Solyanka",
+    "description": "Суп с мясом и копченостями",
+    "price": 199.99,
+    "category_id": 1
+  },
+  {
+    "id": 17,
+    "name": "Cheesecake",
+    "description": "Нежный десерт с сыром и ягодным соусом",
+    "price": 229.99,
+    "category_id": 1
+  },
+  {
+    "id": 18,
+    "name": "Okroshka",
+    "description": "Холодный суп на квасе или кефире",
+    "price": 169.99,
+    "category_id": 1
+  },
+  {
+    "id": 19,
+    "name": "French Fries",
+    "description": "Хрустящий картофель, обжаренный во фритюре",
+    "price": 99.99,
+    "category_id": 1
+  },
+  {
+    "id": 20,
+    "name": "Chebureki",
+    "description": "Жареные пирожки с мясом",
+    "price": 149.99,
+    "category_id": 1
+  },
+  {
+    "id": 21,
+    "name": "Taco Al Pastor",
+    "description": "Мексиканское тако с маринованной свининой",
+    "price": 219.99,
+    "category_id": 4
+  },
+  {
+    "id": 22,
+    "name": "Guacamole",
+    "description": "Свежий мексиканский соус из авокадо",
+    "price": 159.99,
+    "category_id": 4
+  },
+  {
+    "id": 23,
+    "name": "Quesadilla",
+    "description": "Тортилья с сыром и курицей",
+    "price": 199.99,
+    "category_id": 4
+  },
+  {
+    "id": 24,
+    "name": "Churros",
+    "description": "Мексиканские сладкие палочки с корицей",
+    "price": 129.99,
+    "category_id": 4
+  },
+  {
+    "id": 25,
+    "name": "Enchiladas",
+    "description": "Тортильи, запеченные с соусом и сыром",
+    "price": 279.99,
+    "category_id": 4
+  },
+  {
+    "id": 26,
+    "name": "Tamales",
+    "description": "Традиционное мексиканское блюдо из кукурузного теста",
+    "price": 189.99,
+    "category_id": 4
+  },
+  {
+    "id": 27,
+    "name": "Elote",
+    "description": "Кукуруза на гриле с майонезом и сыром",
+    "price": 139.99,
+    "category_id": 4
+  },
+  {
+    "id": 28,
+    "name": "Pozole",
+    "description": "Мексиканский суп с кукурузой и мясом",
+    "price": 249.99,
+    "category_id": 4
+  },
+  {
+    "id": 29,
+    "name": "Tostadas",
+    "description": "Жареная тортилья с начинкой",
+    "price": 179.99,
+    "category_id": 4
+  },
+  {
+    "id": 30,
+    "name": "Mole Poblano",
+    "description": "Курица с шоколадным соусом",
+    "price": 289.99,
+    "category_id": 4
+  },
+  {
+    "id": 31,
+    "name": "Flautas",
+    "description": "Жареные тортильи с курицей",
+    "price": 209.99,
+    "category_id": 4
+  },
+  {
+    "id": 32,
+    "name": "Chilaquiles",
+    "description": "Тортильи с соусом и яйцами",
+    "price": 199.99,
+    "category_id": 4
+  },
+  {
+    "id": 33,
+    "name": "Carnitas",
+    "description": "Мексиканская тушеная свинина",
+    "price": 239.99,
+    "category_id": 4
+  },
+  {
+    "id": 34,
+    "name": "Sopes",
+    "description": "Мексиканские лепешки с начинкой",
+    "price": 189.99,
+    "category_id": 4
+  },
+  {
+    "id": 35,
+    "name": "Barbacoa",
+    "description": "Мясо, приготовленное на медленном огне",
+    "price": 259.99,
+    "category_id": 4
+  },
+  {
+    "id": 36,
+    "name": "Menudo",
+    "description": "Традиционный мексиканский суп из говядины",
+    "price": 239.99,
+    "category_id": 4
+  },
+  {
+    "id": 37,
+    "name": "Ceviche",
+    "description": "Свежая рыба, маринованная в цитрусовом соке",
+    "price": 299.99,
+    "category_id": 4
+  },
+  {
+    "id": 38,
+    "name": "Huevos Rancheros",
+    "description": "Яичница с томатным соусом и тортильями",
+    "price": 199.99,
+    "category_id": 4
+  },
+  {
+    "id": 39,
+    "name": "Empanadas",
+    "description": "Жареные пирожки с мясом и овощами",
+    "price": 169.99,
+    "category_id": 4
+  },
+  {
+    "id": 40,
+    "name": "Aguachile",
+    "description": "Креветки в остром соусе с лаймом и огурцом",
+    "price": 269.99,
+    "category_id": 4
   }
 ]
