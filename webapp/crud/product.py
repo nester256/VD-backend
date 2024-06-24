@@ -3,11 +3,8 @@ from typing import Sequence
 from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from webapp.crud.utils.operations import AsyncCRUDFactory
 from webapp.integrations.metrics.metrics import async_integrations_timer
 from webapp.models.sirius.product import Product
-
-product_crud = AsyncCRUDFactory(Product)
 
 
 @async_integrations_timer
@@ -21,6 +18,7 @@ async def get_products_page(session: AsyncSession, offset: int, limit: int, cat_
             .order_by(Product.id)
         )
     ).all()
+
 
 @async_integrations_timer
 async def get_product_by_id(session: AsyncSession, id: int):

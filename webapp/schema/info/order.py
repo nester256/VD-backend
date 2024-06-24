@@ -1,20 +1,21 @@
-from typing import List
+from typing import Dict
 
 from pydantic import BaseModel, ConfigDict
 
+from webapp.models.sirius.order import StatusEnum
 
-class OrderInfo(BaseModel):
+
+class OrderProductCreate(BaseModel):
     model_config = ConfigDict(from_attributes=True)
-    restaurant_id: int
-    user_id: int
-    where_to_deliver: str
+    product_id: int
+    quantity: int
 
 
-class OrderResponse(BaseModel):
-    restaurant_id: int
-    user_id: int
-    where_to_deliver: str
+class CreateOrderRequest(BaseModel):
+    products: Dict[int, int]
 
 
-class OrdersListResponse(BaseModel):
-    products: List[OrderResponse]
+class CreateOrderResponse(BaseModel):
+    model_config = ConfigDict(from_attributes=True)
+    order_id: int
+    status: StatusEnum

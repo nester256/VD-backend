@@ -27,7 +27,7 @@ class Order(Base):
 
     user_id: Mapped[int] = mapped_column(BigInteger, ForeignKey('user.id'))
 
-    deliverer_id: Mapped[int] = mapped_column(BigInteger, ForeignKey('user.id'))
+    deliverer_id: Mapped[int] = mapped_column(BigInteger, ForeignKey('user.id'), nullable=True)
 
     user: Mapped['User'] = relationship('User', back_populates='orders', foreign_keys='Order.user_id', uselist=False, overlaps="deliverer")
 

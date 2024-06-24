@@ -19,7 +19,7 @@ class UserRoleEnum(Enum):
 class User(Base):
     __tablename__ = 'user'
 
-    id: Mapped[int] = mapped_column(BigInteger, primary_key=True)
+    id: Mapped[int] = mapped_column(BigInteger, primary_key=True, index=True)
 
     address: Mapped[str] = mapped_column(String, nullable=True)
 
