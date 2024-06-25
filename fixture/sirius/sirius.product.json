@@ -1,282 +1,877 @@
 [
   {
     "id": 1,
-    "name": "Shaurma Standart",
-    "description": "Ням ням",
-    "price": 269.99,
+    "name": "Яблоко",
+    "description": "Сочное яблоко",
+    "price": 2.99,
     "category_id": 1
   },
   {
     "id": 2,
-    "name": "Shaurma Big",
-    "description": "Ням ням x2",
-    "price": 329.99,
+    "name": "Банан",
+    "description": "Зрелый банан",
+    "price": 1.49,
     "category_id": 1
   },
   {
     "id": 3,
-    "name": "Classic Burger",
-    "description": "Сочный бургер с говядиной",
-    "price": 299.99,
+    "name": "Апельсин",
+    "description": "Спелый апельсин",
+    "price": 1.99,
     "category_id": 1
   },
   {
     "id": 4,
-    "name": "Caesar Salad",
-    "description": "Легкий салат с курицей и соусом Цезарь",
-    "price": 249.99,
+    "name": "Груша",
+    "description": "Сладкая груша",
+    "price": 2.49,
     "category_id": 1
   },
   {
     "id": 5,
-    "name": "Margherita Pizza",
-    "description": "Классическая пицца с томатами и сыром",
-    "price": 449.99,
+    "name": "Мандарин",
+    "description": "Сочный мандарин",
+    "price": 1.79,
     "category_id": 1
   },
   {
     "id": 6,
-    "name": "Sushi Set",
-    "description": "Ассорти из свежих суши и роллов",
-    "price": 799.99,
+    "name": "Киви",
+    "description": "Зеленый киви",
+    "price": 2.29,
     "category_id": 1
   },
   {
     "id": 7,
-    "name": "Lamb Kebab",
-    "description": "Шашлык из рубленого мяса",
-    "price": 359.99,
+    "name": "Персик",
+    "description": "Ароматный персик",
+    "price": 2.79,
     "category_id": 1
   },
   {
     "id": 8,
-    "name": "Falafel",
-    "description": "Хрустящие шарики из нута",
-    "price": 199.99,
+    "name": "Арбуз",
+    "description": "Спелый арбуз",
+    "price": 3.99,
     "category_id": 1
   },
   {
     "id": 9,
-    "name": "Pasta Carbonara",
-    "description": "Паста с беконом и сливочным соусом",
-    "price": 379.99,
+    "name": "Дыня",
+    "description": "Сладкая дыня",
+    "price": 3.49,
     "category_id": 1
   },
   {
     "id": 10,
-    "name": "Ramen",
-    "description": "Японский суп с лапшой",
-    "price": 329.99,
+    "name": "Ананас",
+    "description": "Свежий ананас",
+    "price": 4.99,
     "category_id": 1
   },
   {
     "id": 11,
-    "name": "Tom Yum Soup",
-    "description": "Острый тайский суп с креветками",
-    "price": 359.99,
+    "name": "Морковь",
+    "description": "Свежая морковь",
+    "price": 1.29,
     "category_id": 1
   },
   {
     "id": 12,
-    "name": "Tiramisu Cake",
-    "description": "Итальянский десерт с кофе и сыром маскарпоне",
-    "price": 199.99,
+    "name": "Огурец",
+    "description": "Хрустящий огурец",
+    "price": 0.99,
     "category_id": 1
   },
   {
     "id": 13,
-    "name": "Uzbek Plov",
-    "description": "Рис с мясом и овощами",
-    "price": 319.99,
+    "name": "Помидор",
+    "description": "Сочный помидор",
+    "price": 1.79,
     "category_id": 1
   },
   {
     "id": 14,
-    "name": "Pork Shashlik",
-    "description": "Маринованное мясо на гриле",
-    "price": 399.99,
+    "name": "Картофель",
+    "description": "Новый картофель",
+    "price": 1.49,
     "category_id": 1
   },
   {
     "id": 15,
-    "name": "Borscht",
-    "description": "Традиционный украинский суп с капустой и свеклой",
-    "price": 179.99,
+    "name": "Лук репчатый",
+    "description": "Сладкий лук репчатый",
+    "price": 0.89,
     "category_id": 1
   },
   {
     "id": 16,
-    "name": "Solyanka",
-    "description": "Суп с мясом и копченостями",
-    "price": 199.99,
+    "name": "Капуста",
+    "description": "Свежая капуста",
+    "price": 1.19,
     "category_id": 1
   },
   {
     "id": 17,
-    "name": "Cheesecake",
-    "description": "Нежный десерт с сыром и ягодным соусом",
-    "price": 229.99,
+    "name": "Брокколи",
+    "description": "Сочный брокколи",
+    "price": 1.99,
     "category_id": 1
   },
   {
     "id": 18,
-    "name": "Okroshka",
-    "description": "Холодный суп на квасе или кефире",
-    "price": 169.99,
+    "name": "Перец красный",
+    "description": "Сладкий перец красный",
+    "price": 2.29,
     "category_id": 1
   },
   {
     "id": 19,
-    "name": "French Fries",
-    "description": "Хрустящий картофель, обжаренный во фритюре",
-    "price": 99.99,
+    "name": "Свекла",
+    "description": "Сладкая свекла",
+    "price": 1.59,
     "category_id": 1
   },
   {
     "id": 20,
-    "name": "Chebureki",
-    "description": "Жареные пирожки с мясом",
-    "price": 149.99,
+    "name": "Шпинат",
+    "description": "Свежий шпинат",
+    "price": 2.49,
     "category_id": 1
   },
   {
     "id": 21,
-    "name": "Taco Al Pastor",
-    "description": "Мексиканское тако с маринованной свининой",
-    "price": 219.99,
-    "category_id": 4
+    "name": "Чеснок",
+    "description": "Ароматный чеснок",
+    "price": 0.79,
+    "category_id": 1
   },
   {
     "id": 22,
-    "name": "Guacamole",
-    "description": "Свежий мексиканский соус из авокадо",
-    "price": 159.99,
-    "category_id": 4
+    "name": "Молоко",
+    "description": "Цельное молоко 3.2%",
+    "price": 2.29,
+    "category_id": 2
   },
   {
     "id": 23,
-    "name": "Quesadilla",
-    "description": "Тортилья с сыром и курицей",
-    "price": 199.99,
-    "category_id": 4
+    "name": "Сыр Чеддер",
+    "description": "Сыр Чеддер выдержанный",
+    "price": 5.99,
+    "category_id": 2
   },
   {
     "id": 24,
-    "name": "Churros",
-    "description": "Мексиканские сладкие палочки с корицей",
-    "price": 129.99,
-    "category_id": 4
+    "name": "Творог",
+    "description": "Нежный творог 5%",
+    "price": 3.49,
+    "category_id": 2
   },
   {
     "id": 25,
-    "name": "Enchiladas",
-    "description": "Тортильи, запеченные с соусом и сыром",
-    "price": 279.99,
-    "category_id": 4
+    "name": "Сливки",
+    "description": "Сливки 20%",
+    "price": 4.79,
+    "category_id": 2
   },
   {
     "id": 26,
-    "name": "Tamales",
-    "description": "Традиционное мексиканское блюдо из кукурузного теста",
-    "price": 189.99,
-    "category_id": 4
+    "name": "Кефир",
+    "description": "Простокефир 2.5%",
+    "price": 1.99,
+    "category_id": 2
   },
   {
     "id": 27,
-    "name": "Elote",
-    "description": "Кукуруза на гриле с майонезом и сыром",
-    "price": 139.99,
-    "category_id": 4
+    "name": "Йогурт",
+    "description": "Натуральный йогурт 2%",
+    "price": 1.49,
+    "category_id": 2
   },
   {
     "id": 28,
-    "name": "Pozole",
-    "description": "Мексиканский суп с кукурузой и мясом",
-    "price": 249.99,
-    "category_id": 4
+    "name": "Масло сливочное",
+    "description": "Сливочное масло высшего сорта",
+    "price": 3.99,
+    "category_id": 2
   },
   {
     "id": 29,
-    "name": "Tostadas",
-    "description": "Жареная тортилья с начинкой",
-    "price": 179.99,
-    "category_id": 4
+    "name": "Молочный коктейль",
+    "description": "Фруктовый молочный коктейль",
+    "price": 2.99,
+    "category_id": 2
   },
   {
     "id": 30,
-    "name": "Mole Poblano",
-    "description": "Курица с шоколадным соусом",
-    "price": 289.99,
-    "category_id": 4
+    "name": "Сгущенное молоко",
+    "description": "Сгущенка классическая",
+    "price": 2.49,
+    "category_id": 2
   },
   {
     "id": 31,
-    "name": "Flautas",
-    "description": "Жареные тортильи с курицей",
-    "price": 209.99,
-    "category_id": 4
+    "name": "Ряженка",
+    "description": "Натуральная ряженка 4%",
+    "price": 1.79,
+    "category_id": 2
   },
   {
     "id": 32,
-    "name": "Chilaquiles",
-    "description": "Тортильи с соусом и яйцами",
-    "price": 199.99,
-    "category_id": 4
+    "name": "Простокваша",
+    "description": "Простокваша домашняя",
+    "price": 1.69,
+    "category_id": 2
   },
   {
     "id": 33,
-    "name": "Carnitas",
-    "description": "Мексиканская тушеная свинина",
-    "price": 239.99,
-    "category_id": 4
+    "name": "Молочный десерт",
+    "description": "Ванильный молочный десерт",
+    "price": 2.19,
+    "category_id": 2
   },
   {
     "id": 34,
-    "name": "Sopes",
-    "description": "Мексиканские лепешки с начинкой",
-    "price": 189.99,
-    "category_id": 4
+    "name": "Кисломолочный напиток",
+    "description": "Напиток кисломолочный с вишней",
+    "price": 1.99,
+    "category_id": 2
   },
   {
     "id": 35,
-    "name": "Barbacoa",
-    "description": "Мясо, приготовленное на медленном огне",
-    "price": 259.99,
-    "category_id": 4
+    "name": "Сметана",
+    "description": "Сметана 20%",
+    "price": 2.29,
+    "category_id": 2
   },
   {
     "id": 36,
-    "name": "Menudo",
-    "description": "Традиционный мексиканский суп из говядины",
-    "price": 239.99,
-    "category_id": 4
+    "name": "Шоколадное молоко",
+    "description": "Шоколадное молоко с ванилью",
+    "price": 2.79,
+    "category_id": 2
   },
   {
     "id": 37,
-    "name": "Ceviche",
-    "description": "Свежая рыба, маринованная в цитрусовом соке",
-    "price": 299.99,
-    "category_id": 4
+    "name": "Молочный лёд",
+    "description": "Молочный лёд в стаканчике",
+    "price": 1.49,
+    "category_id": 2
   },
   {
     "id": 38,
-    "name": "Huevos Rancheros",
-    "description": "Яичница с томатным соусом и тортильями",
-    "price": 199.99,
-    "category_id": 4
+    "name": "Молочный рис",
+    "description": "Молочный рисовый пудинг",
+    "price": 2.99,
+    "category_id": 2
   },
   {
     "id": 39,
-    "name": "Empanadas",
-    "description": "Жареные пирожки с мясом и овощами",
-    "price": 169.99,
-    "category_id": 4
+    "name": "Молочный кокос",
+    "description": "Молочный кокосовый напиток",
+    "price": 3.49,
+    "category_id": 2
   },
   {
     "id": 40,
-    "name": "Aguachile",
-    "description": "Креветки в остром соусе с лаймом и огурцом",
-    "price": 269.99,
+    "name": "Кефир греческий",
+    "description": "Греческий кефир 5%",
+    "price": 2.59,
+    "category_id": 2
+  },
+  {
+    "id": 41,
+    "name": "Молочный сыр",
+    "description": "Молочный сыр с добавлением зелени",
+    "price": 4.29,
+    "category_id": 2
+  },
+  {
+    "id": 42,
+    "name": "Масло кокосовое",
+    "description": "Органическое кокосовое масло",
+    "price": 7.99,
+    "category_id": 2
+  },
+    {
+    "id": 43,
+    "name": "Говядина",
+    "description": "Свежая говядина",
+    "price": 7.99,
+    "category_id": 3
+  },
+  {
+    "id": 44,
+    "name": "Куриные грудки",
+    "description": "Куриные грудки без кожи",
+    "price": 4.49,
+    "category_id": 3
+  },
+  {
+    "id": 45,
+    "name": "Свинина",
+    "description": "Свежая свинина",
+    "price": 6.29,
+    "category_id": 3
+  },
+  {
+    "id": 46,
+    "name": "Фарш мясной",
+    "description": "Фарш мясной высшего качества",
+    "price": 3.99,
+    "category_id": 3
+  },
+  {
+    "id": 47,
+    "name": "Бекон",
+    "description": "Сырокопченый бекон",
+    "price": 5.79,
+    "category_id": 3
+  },
+  {
+    "id": 48,
+    "name": "Колбаса вареная",
+    "description": "Колбаса вареная первого сорта",
+    "price": 2.99,
+    "category_id": 3
+  },
+  {
+    "id": 49,
+    "name": "Колбаса сырокопченая",
+    "description": "Сырокопченая колбаса деликатесная",
+    "price": 4.99,
+    "category_id": 3
+  },
+  {
+    "id": 50,
+    "name": "Колбаски куриные",
+    "description": "Колбаски куриные для жарки",
+    "price": 3.49,
+    "category_id": 3
+  },
+  {
+    "id": 51,
+    "name": "Ветчина",
+    "description": "Итальянская ветчина",
+    "price": 6.99,
+    "category_id": 3
+  },
+  {
+    "id": 52,
+    "name": "Консервы мясные",
+    "description": "Консервы мясные в томатном соусе",
+    "price": 2.59,
+    "category_id": 3
+  },
+  {
+    "id": 53,
+    "name": "Пельмени",
+    "description": "Пельмени домашние с мясом",
+    "price": 3.79,
+    "category_id": 3
+  },
+  {
+    "id": 54,
+    "name": "Шашлык из свинины",
+    "description": "Шашлык из свинины с приправами",
+    "price": 8.49,
+    "category_id": 3
+  },
+  {
+    "id": 55,
+    "name": "Стейк говяжий",
+    "description": "Стейк говяжий средней прожарки",
+    "price": 9.99,
+    "category_id": 3
+  },
+  {
+    "id": 56,
+    "name": "Котлеты мясные",
+    "description": "Котлеты мясные домашние",
+    "price": 4.29,
+    "category_id": 3
+  },
+  {
+    "id": 57,
+    "name": "Мясной рулет",
+    "description": "Мясной рулет с начинкой из грибов",
+    "price": 7.29,
+    "category_id": 3
+  },
+  {
+    "id": 58,
+    "name": "Баранина",
+    "description": "Свежая баранина",
+    "price": 11.99,
+    "category_id": 3
+  },
+  {
+    "id": 59,
+    "name": "Жареная курица",
+    "description": "Жареная курица целиком",
+    "price": 6.79,
+    "category_id": 3
+  },
+  {
+    "id": 60,
+    "name": "Сосиски",
+    "description": "Сосиски классические",
+    "price": 2.19,
+    "category_id": 3
+  },
+  {
+    "id": 61,
+    "name": "Конина",
+    "description": "Свежая конина",
+    "price": 9.49,
+    "category_id": 3
+  },
+  {
+    "id": 62,
+    "name": "Сервелат",
+    "description": "Сервелат деликатесный",
+    "price": 3.89,
+    "category_id": 3
+  },
+  {
+    "id": 63,
+    "name": "Мясные котлеты по-киевски",
+    "description": "Мясные котлеты с сыром и зеленью",
+    "price": 5.49,
+    "category_id": 3
+  },
+  {
+    "id": 64,
+    "name": "Мороженое ванильное",
+    "description": "Ванильное мороженое в стаканчике",
+    "price": 3.99,
     "category_id": 4
+  },
+  {
+    "id": 65,
+    "name": "Замороженные овощи",
+    "description": "Смесь замороженных овощей",
+    "price": 1.99,
+    "category_id": 4
+  },
+  {
+    "id": 66,
+    "name": "Газировка Кола",
+    "description": "Газированный напиток Кола",
+    "price": 1.79,
+    "category_id": 5
+  },
+  {
+    "id": 67,
+    "name": "Сок апельсиновый",
+    "description": "Свежевыжатый сок апельсиновый",
+    "price": 3.49,
+    "category_id": 5
+  },
+  {
+    "id": 68,
+    "name": "Чай черный",
+    "description": "Черный чай классический",
+    "price": 1.29,
+    "category_id": 5
+  },
+  {
+    "id": 69,
+    "name": "Кофе растворимый",
+    "description": "Растворимый кофе с молоком",
+    "price": 2.99,
+    "category_id": 5
+  },
+  {
+    "id": 70,
+    "name": "Энергетический напиток",
+    "description": "Напиток для повышения энергии",
+    "price": 2.49,
+    "category_id": 5
+  },
+  {
+    "id": 71,
+    "name": "Молочный коктейль банановый",
+    "description": "Банановый молочный коктейль",
+    "price": 2.79,
+    "category_id": 5
+  },
+  {
+    "id": 72,
+    "name": "Лимонад",
+    "description": "Лимонад с ягодным вкусом",
+    "price": 1.99,
+    "category_id": 5
+  },
+  {
+    "id": 73,
+    "name": "Квас",
+    "description": "Традиционный хлебный квас",
+    "price": 1.59,
+    "category_id": 5
+  },
+  {
+    "id": 74,
+    "name": "Вода минеральная",
+    "description": "Минеральная вода газированная",
+    "price": 0.99,
+    "category_id": 5
+  },
+  {
+    "id": 75,
+    "name": "Смузи ягодный",
+    "description": "Ягодный смузи с молоком",
+    "price": 4.49,
+    "category_id": 5
+  },
+  {
+    "id": 76,
+    "name": "Коктейль фруктовый",
+    "description": "Фруктовый коктейль с льдом",
+    "price": 3.29,
+    "category_id": 5
+  },
+  {
+    "id": 77,
+    "name": "Томатный сок",
+    "description": "Свежевыжатый томатный сок",
+    "price": 2.19,
+    "category_id": 5
+  },
+  {
+    "id": 78,
+    "name": "Мятный чай",
+    "description": "Чай с мятой и лимоном",
+    "price": 1.79,
+    "category_id": 5
+  },
+  {
+    "id": 79,
+    "name": "Айран",
+    "description": "Традиционный кисломолочный напиток",
+    "price": 1.49,
+    "category_id": 5
+  },
+  {
+    "id": 80,
+    "name": "Компот из сухофруктов",
+    "description": "Домашний компот из сухофруктов",
+    "price": 2.99,
+    "category_id": 5
+  },
+  {
+    "id": 81,
+    "name": "Фреш грейпфрутовый",
+    "description": "Свежевыжатый фреш грейпфрутовый",
+    "price": 3.99,
+    "category_id": 5
+  },
+  {
+    "id": 82,
+    "name": "Морс",
+    "description": "Брусничный морс",
+    "price": 1.89,
+    "category_id": 5
+  },
+  {
+    "id": 83,
+    "name": "Холодный чай зеленый",
+    "description": "Зеленый чай с лимоном",
+    "price": 2.49,
+    "category_id": 5
+  },
+  {
+    "id": 84,
+    "name": "Спортивный напиток",
+    "description": "Напиток для спортсменов",
+    "price": 2.69,
+    "category_id": 5
+  },
+  {
+    "id": 85,
+    "name": "Суши классические",
+    "description": "Набор классических суши с лососем и авокадо",
+    "price": 9.99,
+    "category_id": 6
+  },
+  {
+    "id": 86,
+    "name": "Ролл Филадельфия",
+    "description": "Ролл с лососем, авокадо и сливочным сыром",
+    "price": 8.49,
+    "category_id": 6
+  },
+  {
+    "id": 87,
+    "name": "Темпура креветки",
+    "description": "Жареные в темпуре креветки",
+    "price": 11.99,
+    "category_id": 6
+  },
+  {
+    "id": 88,
+    "name": "Удон с курицей",
+    "description": "Традиционные японские лапша удон с курицей",
+    "price": 7.79,
+    "category_id": 6
+  },
+  {
+    "id": 89,
+    "name": "Рамен",
+    "description": "Аутентичный японский рамен с свининой и яйцом",
+    "price": 10.49,
+    "category_id": 6
+  },
+  {
+    "id": 90,
+    "name": "Гункан с лососем",
+    "description": "Гунканы с лососем и авокадо",
+    "price": 6.99,
+    "category_id": 6
+  },
+  {
+    "id": 91,
+    "name": "Сашими лосось",
+    "description": "Набор сашими из свежего лосося",
+    "price": 13.99,
+    "category_id": 6
+  },
+  {
+    "id": 92,
+    "name": "Якитория",
+    "description": "Жареные кусочки курицы по-японски",
+    "price": 8.99,
+    "category_id": 6
+  },
+  {
+    "id": 93,
+    "name": "Омлет японский",
+    "description": "Японский омлет тамагояки",
+    "price": 5.49,
+    "category_id": 6
+  },
+  {
+    "id": 94,
+    "name": "Тако маки",
+    "description": "Роллы тако маки с мясом кальмара и овощами",
+    "price": 9.29,
+    "category_id": 6
+  },
+  {
+    "id": 95,
+    "name": "Терияки лосось",
+    "description": "Лосось терияки с овощами",
+    "price": 12.79,
+    "category_id": 6
+  },
+  {
+    "id": 96,
+    "name": "Васаби",
+    "description": "Острый васаби для суши",
+    "price": 1.99,
+    "category_id": 6
+  },
+  {
+    "id": 97,
+    "name": "Мисо суп",
+    "description": "Традиционный японский суп мисо с тофу и водорослями",
+    "price": 4.99,
+    "category_id": 6
+  },
+  {
+    "id": 98,
+    "name": "Якитори лосось",
+    "description": "Якитори из лосося с соусом терияки",
+    "price": 11.49,
+    "category_id": 6
+  },
+  {
+    "id": 99,
+    "name": "Татаки тунец",
+    "description": "Тунец татаки с соевым соусом и зеленью",
+    "price": 14.49,
+    "category_id": 6
+  },
+  {
+    "id": 100,
+    "name": "Урамаки с креветкой",
+    "description": "Урамаки с креветкой, авокадо и огурцом",
+    "price": 10.99,
+    "category_id": 6
+  },
+  {
+    "id": 101,
+    "name": "Филадельфия угорь",
+    "description": "Ролл Филадельфия с угрем и сливочным сыром",
+    "price": 12.99,
+    "category_id": 6
+  },
+  {
+    "id": 102,
+    "name": "Темпура овощная",
+    "description": "Овощи в темпуре с соусом",
+    "price": 8.29,
+    "category_id": 6
+  },
+  {
+    "id": 103,
+    "name": "Якисоба с говядиной",
+    "description": "Японская лапша якисоба с говядиной и овощами",
+    "price": 9.79,
+    "category_id": 6
+  },
+  {
+    "id": 104,
+    "name": "Калифорния ролл",
+    "description": "Классический ролл Калифорния с крабом и авокадо",
+    "price": 7.49,
+    "category_id": 6
+  },
+  {
+    "id": 105,
+    "name": "Круассан",
+    "description": "Аутентичный французский круассан",
+    "price": 2.49,
+    "category_id": 7
+  },
+  {
+    "id": 106,
+    "name": "Эскарго",
+    "description": "Улитки по-французски с чесноком и петрушкой",
+    "price": 11.99,
+    "category_id": 7
+  },
+  {
+    "id": 107,
+    "name": "Рататуй",
+    "description": "Классический рататуй из французского кино",
+    "price": 8.49,
+    "category_id": 7
+  },
+  {
+    "id": 108,
+    "name": "Бугенвильский пирог",
+    "description": "Пирог с карамелизированным луком и сыром",
+    "price": 7.79,
+    "category_id": 7
+  },
+  {
+    "id": 109,
+    "name": "Фуа-гра",
+    "description": "Фуа-гра с мармеладом из луковицы",
+    "price": 39.99,
+    "category_id": 7
+  },
+  {
+    "id": 110,
+    "name": "Багет",
+    "description": "Аутентичный французский багет",
+    "price": 3.99,
+    "category_id": 7
+  },
+  {
+    "id": 111,
+    "name": "Конфит де канар",
+    "description": "Конфит де канар с гренками и зеленью",
+    "price": 18.99,
+    "category_id": 7
+  },
+  {
+    "id": 112,
+    "name": "Кулебяка",
+    "description": "Русско-французская кулебяка с рыбой и огурцом",
+    "price": 12.49,
+    "category_id": 7
+  },
+  {
+    "id": 113,
+    "name": "Шоколадный суфле",
+    "description": "Французское шоколадное суфле с ванильным соусом",
+    "price": 9.79,
+    "category_id": 7
+  },
+  {
+    "id": 114,
+    "name": "Мусс из малины",
+    "description": "Десертный мусс из свежих малин",
+    "price": 7.29,
+    "category_id": 7
+  },
+  {
+    "id": 115,
+    "name": "Сельдь под шубой",
+    "description": "Сельдь под шубой по-французски",
+    "price": 6.99,
+    "category_id": 7
+  },
+  {
+    "id": 116,
+    "name": "Булефф",
+    "description": "Французский булефф с шоколадной начинкой",
+    "price": 4.49,
+    "category_id": 7
+  },
+  {
+    "id": 117,
+    "name": "Эклер",
+    "description": "Французский эклер с ванильным кремом",
+    "price": 3.79,
+    "category_id": 7
+  },
+  {
+    "id": 118,
+    "name": "Кассуле",
+    "description": "Традиционная кассуле с белыми бобами и мясом",
+    "price": 14.99,
+    "category_id": 7
+  },
+  {
+    "id": 119,
+    "name": "Пицца по-французски",
+    "description": "Пицца с камамбером и грушей",
+    "price": 11.49,
+    "category_id": 7
+  },
+  {
+    "id": 120,
+    "name": "Фоагра",
+    "description": "Французский фоагра с брускеттой",
+    "price": 24.99,
+    "category_id": 7
+  },
+  {
+    "id": 121,
+    "name": "Пельмени по-французски",
+    "description": "Пельмени с говядиной и травами",
+    "price": 8.29,
+    "category_id": 7
+  },
+  {
+    "id": 122,
+    "name": "Клубника в шампанском",
+    "description": "Свежая клубника в шампанском",
+    "price": 5.99,
+    "category_id": 7
+  },
+  {
+    "id": 123,
+    "name": "Брускетта",
+    "description": "Французская брускетта с помидорами и базиликом",
+    "price": 3.49,
+    "category_id": 7
+  },
+  {
+    "id": 124,
+    "name": "Маренг",
+    "description": "Французский маренг с лимонным кремом",
+    "price": 6.49,
+    "category_id": 7
+  },
+  {
+    "id": 125,
+    "name": "Конфитюр",
+    "description": "Французский конфитюр из вишни",
+    "price": 4.99,
+    "category_id": 7
   }
 ]

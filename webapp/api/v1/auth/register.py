@@ -6,14 +6,14 @@ from starlette import status
 from webapp.api.v1.auth.router import auth_router
 from webapp.crud.user import check_user, create_user
 from webapp.db.postgres import get_session
-from webapp.schema.auth.user import UserRegister
 from webapp.logger import logger
+from webapp.schema.auth.user import UserRegister
 
 
-@auth_router.post("/register")
+@auth_router.post('/register')
 async def auth_register_handler(
-        body: UserRegister,
-        session: AsyncSession = Depends(get_session),
+    body: UserRegister,
+    session: AsyncSession = Depends(get_session),
 ) -> Response:
     try:
         user_exists = await check_user(session, body.id)

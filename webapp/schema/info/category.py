@@ -6,6 +6,7 @@ class CategoryResp(BaseModel):
     id: int
     name: str
 
+
 class CategoriesPageResp(BaseModel):
     model_config = ConfigDict(from_attributes=True)
     categories: list[CategoryResp]

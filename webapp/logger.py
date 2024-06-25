@@ -8,7 +8,6 @@ with open('conf/logging.conf.yml', 'r') as f:
 
 
 class ConsoleFormatter(logging.Formatter):
-
     def format(self, record: logging.LogRecord) -> str:
         try:
             correlation_id = correlation_id_ctx.get()

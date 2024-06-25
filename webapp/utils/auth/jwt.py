@@ -4,7 +4,7 @@ from datetime import datetime, timedelta
 from typing import Annotated, cast
 
 from fastapi import Depends, Header, HTTPException
-from jose import JWTError, jwt
+from jose import jwt
 from starlette import status
 from typing_extensions import TypedDict
 

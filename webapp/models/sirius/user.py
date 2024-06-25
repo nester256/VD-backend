@@ -1,6 +1,7 @@
 from enum import Enum
 from typing import TYPE_CHECKING, List
-from sqlalchemy import Integer, String, BigInteger
+
+from sqlalchemy import BigInteger, String
 from sqlalchemy.dialects.postgresql import ENUM
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 
@@ -25,6 +26,8 @@ class User(Base):
 
     role: Mapped[UserRoleEnum] = mapped_column(ENUM(UserRoleEnum), default=UserRoleEnum.customer)
 
-    orders: Mapped[List['Order']] = relationship('Order', back_populates='user', foreign_keys='Order.user_id', overlaps="deliveries")
+    orders: Mapped[List['Order']] = relationship(
+        'Order', back_populates='user', foreign_keys='Order.user_id', overlaps='deliveries'
+    )
 
-    deliveries: Mapped[List['Order']] = relationship('Order', foreign_keys='Order.deliverer_id', overlaps="deliverer")
+    deliveries: Mapped[List['Order']] = relationship('Order', foreign_keys='Order.deliverer_id', overlaps='deliverer')

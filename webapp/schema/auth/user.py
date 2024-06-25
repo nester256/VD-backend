@@ -1,5 +1,4 @@
 from pydantic import BaseModel, ConfigDict
-from datetime import datetime
 
 from webapp.models.sirius.user import UserRoleEnum
 
@@ -18,6 +17,7 @@ class UserInfoResponse(BaseModel):
     id: int
     role: UserRoleEnum
     address: str | None
+
 
 class UserRegister(BaseModel):
     id: int

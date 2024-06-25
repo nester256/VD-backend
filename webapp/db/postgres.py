@@ -1,6 +1,6 @@
 from typing import AsyncGenerator
 
-from sqlalchemy import QueuePool, AsyncAdaptedQueuePool
+from sqlalchemy import AsyncAdaptedQueuePool
 from sqlalchemy.ext.asyncio import AsyncEngine, AsyncSession, async_sessionmaker, create_async_engine
 
 from conf.config import settings

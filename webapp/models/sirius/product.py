@@ -1,14 +1,14 @@
 from decimal import Decimal
 from typing import TYPE_CHECKING, List
 
-from sqlalchemy import ForeignKey, Integer, String, Index, DECIMAL, Text
+from sqlalchemy import DECIMAL, ForeignKey, Index, Integer, String
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 
-from webapp.models.meta import Base, DEFAULT_SCHEMA
+from webapp.models.meta import DEFAULT_SCHEMA, Base
 
 if TYPE_CHECKING:
-    from webapp.models.sirius.order import Order
     from webapp.models.sirius.category import Category
+    from webapp.models.sirius.order import Order
 
 
 class Product(Base):

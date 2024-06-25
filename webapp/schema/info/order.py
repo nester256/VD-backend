@@ -1,4 +1,4 @@
-from typing import Dict
+from typing import Dict, List
 
 from pydantic import BaseModel, ConfigDict
 
@@ -19,3 +19,14 @@ class CreateOrderResponse(BaseModel):
     model_config = ConfigDict(from_attributes=True)
     order_id: int
     status: StatusEnum
+
+
+class OrderWithTotalCost(BaseModel):
+    model_config = ConfigDict(from_attributes=True)
+    order_id: int
+    status: StatusEnum
+    total_cost: float
+
+
+class OrdersListResponse(BaseModel):
+    orders: List[OrderWithTotalCost]

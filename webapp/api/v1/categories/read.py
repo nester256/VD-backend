@@ -13,10 +13,10 @@ from webapp.utils.auth.jwt import JwtTokenT, jwt_auth
 
 @categories_router.get('', response_model=CategoriesPageResp)
 async def get_categories(
-        offset: int,
-        limit: int,
-        access_token: JwtTokenT = Depends(jwt_auth.validate_token),
-        session: AsyncSession = Depends(get_session),
+    offset: int,
+    limit: int,
+    access_token: JwtTokenT = Depends(jwt_auth.validate_token),
+    session: AsyncSession = Depends(get_session),
 ) -> ORJSONResponse:
     try:
         categories = await get_categories_page(session, offset, limit)
@@ -25,8 +25,7 @@ async def get_categories(
 
         serialized_cats = {'categories': categories}
         return ORJSONResponse(
-            content=CategoriesPageResp.model_validate(serialized_cats).model_dump(),
-            status_code=status.HTTP_200_OK
+            content=CategoriesPageResp.model_validate(serialized_cats).model_dump(), status_code=status.HTTP_200_OK
         )
     except HTTPException as http_err:
         raise http_err
